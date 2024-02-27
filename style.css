@@ -113,6 +113,7 @@ header .content p{
 
 
 .portfolio{
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -126,6 +127,7 @@ header .content p{
 
 } 
 .portfolio .content-title .title{
+    width: 100%;
     margin-top: 40px;
     display: flex;
     justify-content: center;
@@ -142,7 +144,7 @@ header .content p{
 }
 .portfolio .content-title .title .line-star{
     margin: 50px 0;
-    width: 100%;
+    width: 40%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -154,7 +156,7 @@ header .content p{
     text-align: center;
 }
 .portfolio .content-title .title .line-star  .line{
-    width: 60%;
+    width: 20%;
     height: 4px;
     background-color: #151c63cc;
 }
@@ -233,12 +235,11 @@ header .content p{
     background-color: #4bb1a0;
 }
 .about .content-title .title{
-    margin-top: 40px;
+    margin-top: 40px 0;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 30px;
 }
 .about .content-title .title h2{
     color: #ffffff;
@@ -251,7 +252,7 @@ header .content p{
 
 .about .content-title .title .line-star{
     margin: 50px 0;
-    width: 100%;
+    width: 40%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -320,6 +321,7 @@ header .content p{
     width: 100%;
 }
 .contact .content-title .title{
+    width: 100%;
     margin-top: 40px;
     display: flex;
     justify-content: center;
@@ -336,7 +338,7 @@ header .content p{
 }
 .contact .content-title .title .line-star{
     margin: 50px 0;
-    width: 100%;
+    width: 40%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -410,10 +412,8 @@ textarea:focus {
 .contact .content-title .form ::placeholder{
     color: #144072;
     opacity: 50%;
-    @media (min-width:1600px) {
-        font-size: 24px;
-     }
 }
+
 
 .contact .content-title .form  .btn-div{
     width: 100%;
