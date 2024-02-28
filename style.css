@@ -3,18 +3,23 @@
     margin: 0;
     padding: 0;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 body{
     font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 .navbar{
     width: 100%;
-    height: 120px;
-    background-color: #151c63cc;
+    height: 100px;
+    background-color: rgb(39, 41, 71);
     display: flex;
     justify-content: center;
     align-items: center;
+    position: fixed;
+    z-index: 1;
 }
+
 
 .navbar  .row {
     width: 100%;
@@ -31,6 +36,9 @@ body{
     font-weight: 700;
     cursor: pointer;
 }
+.navbar-right li a:hover{
+    color: #4bb1a0
+}
 .navbar-right{
     justify-self: center;
     width: 30%;
@@ -44,13 +52,17 @@ body{
     text-align: center;
     align-items: center;
 }
-.navbar-right a{
+.navbar-right li{
+    list-style: none;
+}
+.navbar-right li  a{
     text-decoration: none;
     font-size: 24px;
     color: white;
     text-transform: uppercase;
     font-weight: 700;
     cursor: pointer;
+    transition: 0.5s ease;
 }
 
 
@@ -221,13 +233,6 @@ header .content p{
     transform: translate(-50%, -50%);
     text-align: center;
   }
-.portfolio .content-title .content .box img:hover{
-    content: "";
-}
-
-
-
-
 .about{
     padding: 90px 0;
     margin-top: 40px;
